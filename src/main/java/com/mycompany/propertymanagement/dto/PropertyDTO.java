@@ -8,6 +8,8 @@ import lombok.Setter;
 @Setter
 public class PropertyDTO {
 
+    private Long id;
+
     private String title;
     private String description;
     private String ownerName;

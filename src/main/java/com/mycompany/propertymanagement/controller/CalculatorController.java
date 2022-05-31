@@ -1,5 +1,6 @@
 package com.mycompany.propertymanagement.controller;
 
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ public class CalculatorController {
      //http://localhost:8080/api/v1/calculator/add
      //http://localhost:8080/api/v1/calculator/add?num1=3.4&num2=3.7
      // http://localhost:8080/api/v1/calculator/add/99?num1=4.4&num2=3.7
+
     @GetMapping("/add/{num3}") //method level mapping of an url to controller function
     public Double add (@RequestParam("num1") Double num1, @RequestParam("num2") Double num2,
                        @PathVariable("num3") Double num3){
