@@ -1,4 +1,4 @@
-package com.mycompany.propertymanagement.impl;
+package com.mycompany.propertymanagement.service.impl;
 
 import com.mycompany.propertymanagement.converter.PropertyConverter;
 import com.mycompany.propertymanagement.dto.PropertyDTO;
@@ -55,8 +55,7 @@ public class PropertyServiceImpl implements PropertyService {
             pe.setTitle(propertyDTO.getTitle());
             pe.setDescription(propertyDTO.getDescription());
             pe.setAddress(propertyDTO.getAddress());
-            pe.setOwnerEmail(propertyDTO.getOwnerEmail());
-            pe.setOwnerName(propertyDTO.getOwnerName());
+
             pe.setPrice(propertyDTO.getPrice());
             dto = propertyConverter.convertEntityToDTO(pe);
             propertyRepository.save(pe);

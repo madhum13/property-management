@@ -31,7 +31,7 @@ public class PropertyController {
     }
 
     @PostMapping("/properties")
-    public ResponseEntity saveProperty(@RequestBody PropertyDTO propertyDTO){
+    public ResponseEntity<PropertyDTO> saveProperty(@RequestBody PropertyDTO propertyDTO){
 
         propertyDTO = propertyService.saveProperty(propertyDTO);
         ResponseEntity<PropertyDTO> responseEntity = new ResponseEntity<>(propertyDTO, HttpStatus.CREATED);
@@ -40,8 +40,8 @@ public class PropertyController {
 
     @GetMapping("/properties")
     public ResponseEntity<List<PropertyDTO>> getAllProperties(){
-        System.out.println(dummy);
-        System.out.println(dbUrl);
+       // System.out.println(dummy);
+       // System.out.println(dbUrl);
         List<PropertyDTO> propertyList = propertyService.getAllProperties();
         ResponseEntity<List<PropertyDTO>> responseEntity = new ResponseEntity<>(propertyList, HttpStatus.OK);
         return responseEntity;
