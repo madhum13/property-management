@@ -19,7 +19,7 @@ public class PropertyController {
     //http://localhost:8080/api/v1/properties/hello
 
     @Value(("${pms.dummy:}"))
-    private String dummy;
+    private String dummy;  //configuration dummy
 
     @Value(("${spring.datasource.url:}"))
     private String dbUrl;
