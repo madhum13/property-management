@@ -7,11 +7,11 @@ import java.util.List;
 
 public interface PropertyService {
 
-    public PropertyDTO saveProperty(PropertyDTO propertyDTO);
+    PropertyDTO saveProperty(PropertyDTO propertyDTO);
     List<PropertyDTO> getAllProperties();
-   PropertyDTO updateProperty(PropertyDTO propertyDTO, Long propertyId);
-   PropertyDTO updatePropertyDescription(@RequestBody PropertyDTO propertyDTO, Long propertyId);
-   PropertyDTO updatePropertyPrice(@RequestBody PropertyDTO propertyDTO, Long propertyId);
-   void deleteProperty(Long propertyId);
-
+    List<PropertyDTO> getAllPropertiesForUser(Long userId);
+    PropertyDTO updateProperty(PropertyDTO propertyDTO, Long propertyId);
+    PropertyDTO updatePropertyDescription(@RequestBody PropertyDTO propertyDTO, Long propertyId);
+    PropertyDTO updatePropertyPrice(@RequestBody PropertyDTO propertyDTO, Long propertyId);
+    void deleteProperty(Long propertyId);
 }

@@ -1,9 +1,8 @@
-package com.mycompany.propertymanagement.controller;
+package com.mycompany.propertymanagement.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CalculatorDTO {
-
 
     private Double num1;
     private Double num2;
