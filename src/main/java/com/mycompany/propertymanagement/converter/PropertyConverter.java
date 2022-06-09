@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PropertyConverter {
 
-    public PropertyEntity convertDTOtoEntity(PropertyDTO propertyDTO){
+    public PropertyEntity convertDTOToEntity(PropertyDTO propertyDTO){
 
         PropertyEntity pe = new PropertyEntity();
         pe.setTitle(propertyDTO.getTitle());
