@@ -16,6 +16,7 @@ public class DTOTester {
         BeanTester beanTester = new BeanTester();
         beanTester.testBean(CalculatorDTO.class);
         beanTester.testBean(PropertyDTO.class);
+        beanTester.testBean(UserDTO.class);
 
     }
 }
